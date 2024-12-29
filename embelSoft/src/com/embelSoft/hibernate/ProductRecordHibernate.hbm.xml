@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.ProductRecordHibernate" 
+    table="purchase_record" >
+    
+    	<id name="pkPurchaseId" type="java.lang.Long" column="pk_purchaseId">
+			<generator class="increment" />
+		</id>
+		
+	<property
+        name="billNo"
+        type="java.lang.String"
+        column="bill_no"
+    />
+    
+    <property
+        name="vendorName"
+        type="java.lang.String"
+        column="vendor_name"
+    />
+    
+    <property
+        name="invoiceDate"
+        type="java.sql.Date"
+        column="invoice_date"
+    />
+       <property
+			name="productName"
+        	type="java.lang.String"
+        	column="product_name"
+       />
+    <property
+        name="description"
+        type="java.lang.String"
+        column="description"
+    />
+    
+    
+    <property
+        name="hsnsac"
+        type="java.lang.String"
+        column="hsnsac"
+    />
+    
+    <property
+        name="unitPrice"
+        type="java.lang.Double"
+        column="unit_price"
+    />
+    
+    <property
+        name="quantity"
+        type="java.lang.Double"
+        column="quantity"
+    />
+    
+    <property
+        name="amount"
+        type="java.lang.Double"
+        column="amount"
+    />
+    
+    <property
+        name="subtotal"
+        type="java.lang.Double"
+        column="subtotal"
+    />
+    
+    <property
+        name="gstPercent"
+        type="java.lang.Double"
+        column="gst_percent"
+    />
+    
+    <property
+        name="igstPercent"
+        type="java.lang.Double"
+        column="igst_percent"
+    />
+    
+    <property
+        name="taxAmount"
+        type="java.lang.Double"
+        column="tax_amount"
+    />
+    
+    <property
+        name="grossTotal"
+        type="java.lang.Double"
+        column="gross_total"
+    />
+    
+    <property
+        name="totalSubTotal"
+        type="java.lang.Double"
+        column="totalSubTotal"
+    />
+    
+    <property
+        name="totalTaxAmount"
+        type="java.lang.Double"
+        column="totalTaxAmount"
+    />
+    
+    <property
+        name="total"
+        type="java.lang.Double"
+        column="total"
+    />
+    
+    <property
+        name="discountAmount"
+        type="java.lang.Double"
+        column="discountAmount"
+    />
+    
+    <property
+        name="discountPercent"
+        type="java.lang.Double"
+        column="discountPercent"
+    />
+    <property
+        name="fkVendoId"
+        type="java.lang.Integer"
+        column="fkvendorId"
+    />
+ 
+		</class>
+    </hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TaxDetailsHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.TaxDetailsHibernate" table="tax_details" >
+    	<id name="pkTaxDetailsId" type="java.lang.Long" column="pk_tax_details_id">
+			<generator class="increment" />
+		</id> 
+		<property
+			name="taxType"
+        	type="java.lang.String"
+        	column="tax_type"
+       />
+       <property
+			name="taxPercentage"
+        	type="java.lang.Double"
+        	column="tax_percentage"
+       />      
+       <property
+			name="CGST"
+        	type="java.lang.Double"
+        	column="CGST"
+       />
+       <property
+			name="SGST"
+        	type="java.lang.Double"
+        	column="SGST"
+       />
+       <property
+			name="lastUpdateDate"
+        	type="java.sql.Date"
+        	column="last_update_date"
+       />
+    </class>
+</hibernate-mapping>
+   

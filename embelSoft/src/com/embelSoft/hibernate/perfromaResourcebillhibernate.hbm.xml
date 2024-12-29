@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ResourceBillingHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.perfromaResourcesbillhibernate" table="resource_billing_perfroma">
+    	<id name="pkResourceBillId" type="java.lang.Long" column="pk_resource_bill_id">
+			<generator class="increment" />
+		</id>
+		<property
+			name="billNo"
+        	type="java.lang.String"
+        	column="bill_no"
+       />
+		<property
+			name="billDate"
+        	type="java.sql.Date"
+        	column="bill_date"
+       />
+       <property
+			name="fkVendorId"
+        	type="java.lang.Long"
+        	column="fk_vendor_id"
+       />
+       <property
+			name="vendorName"
+        	type="java.lang.String"
+        	column="vendor_name"
+       />
+       <property
+			name="billPeriodStartDate"
+        	type="java.sql.Date"
+        	column="bill_period_start_date"
+       />
+       <property
+			name="billPeriodEndDate"
+        	type="java.sql.Date"
+        	column="bill_period_end_date"
+       />
+       <property
+			name="productName"
+        	type="java.lang.String"
+        	column="product_name"
+       />
+       <property
+			name="description"
+        	type="java.lang.String"
+        	column="description"
+       />
+       <property
+			name="hsnSac"
+        	type="java.lang.String"
+        	column="hsn_sac"
+       />
+       <property
+			name="unitPrice"
+        	type="java.lang.Double"
+        	column="unit_price"
+       />
+       <property
+			name="quantity"
+        	type="java.lang.Long"
+        	column="quantity"
+       />
+       <property
+			name="amount"
+        	type="java.lang.Double"
+        	column="amount"
+       />
+       <property
+			name="discountPercent"
+        	type="java.lang.Double"
+        	column="discount_percent"
+       />
+       <property
+			name="discountAmount"
+        	type="java.lang.Double"
+        	column="discount_amount"
+       />
+       <property
+			name="subTotal"
+        	type="java.lang.Double"
+        	column="sub_total"
+       />
+       <property
+			name="GST"
+        	type="java.lang.Double"
+        	column="GST"
+       />
+      <!--  <property
+			name="SGST"
+        	type="java.lang.Double"
+        	column="SGST"
+       /> -->
+       <property
+			name="IGST"
+        	type="java.lang.Double"
+        	column="IGST"
+       />
+       <property
+			name="taxAmount"
+        	type="java.lang.Double"
+        	column="tax_amount"
+       />
+       <property
+			name="total"
+        	type="java.lang.Double"
+        	column="total"
+       />
+       <property
+			name="totalSubTotal"
+        	type="java.lang.Double"
+        	column="total_sub_total"
+       />
+       <property
+			name="totalTaxAmount"
+        	type="java.lang.Double"
+        	column="total_tax_amount"
+       />
+       <property
+			name="grossTotal"
+        	type="java.lang.Double"
+        	column="gross_total"
+       />
+    </class>
+</hibernate-mapping>
+   

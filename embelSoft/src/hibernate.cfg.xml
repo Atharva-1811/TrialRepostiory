@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+       <!-- Database connection settings -->
+       <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+       
+       <property name="connection.url">jdbc:mysql://localhost:3306/embelsof_embelsoft</property>
+       <property name="connection.username">embelsof_root</property>
+       
+       <property name="connection.password">Embel@12345678</property>
+       <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+             
+             
+       <!-- <property name="connection.url">jdbc:mysql://localhost:3306/embel_soft</property>
+       <property name="connection.username">root</property>
+       
+       <property name="connection.password">password</property>
+       <property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+       
+       
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.c3p0.acquire_increment">1</property>
+        <property name="hibernate.c3p0.acquireRetryAttempts">30</property>
+        <property name="hibernate.c3p0.acquireRetryDelay">1000</property> 
+
+
+       <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+       <!-- Echo all executed SQL to stdout -->
+       <property name="show_sql">true</property>
+        
+		<mapping resource="com/embelSoft/hibernate/EmployeeDetailsHibernate.hbm.xml"/>
+		
+		
+		<mapping resource="com/embelSoft/hibernate/VendorDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ClientEnquiryHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ClientResponseHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/PurchaseOrderHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/QuotationHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ClientQuotationHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/EmployeePaymentBeanHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ExpenditureDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ExpenditurePaymentHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/HRBillingHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ResourceBillingHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ProductBillingHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ProductBillingHibernateNew.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/OfferLetterHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/UserDetailasHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/UserDetailasNewHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/AccessControlHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/PurchaseHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/PurchaseOrderReceivedHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ProductBillingDtlForClientPaymentCashBookHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/PurchaseOrderCreateHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/PurchaseOrderCreateHibernateNew.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/VendorPaymentDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ClientPaymentDetailsHibernate.hbm.xml"/>	
+		<mapping resource="com/embelSoft/hibernate/ExperienceLetterHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/EmployeeLeaveHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ProductDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ComponentDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/CompTypeDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ComponentReceivedPOHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/ComponentStockHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/TaxDetailsHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/BillOfMaterialHibernate.hbm.xml"/>
+		<mapping resource="com/embelSoft/hibernate/CompoentCategoryDetailsHibernate.hbm.xml" />
+		<mapping resource="com/embelSoft/hibernate/CompoenentBillingHibernate.hbm.xml" />
+		<mapping resource="com/embelSoft/hibernate/perfromaBillingHibernate.hbm.xml" />
+		<mapping resource="com/embelSoft/hibernate/perfromaResourcebillhibernate.hbm.xml" />
+		<mapping resource="com/embelSoft/hibernate/EnquiryFormHibernate.hbm.xml" />
+		<mapping resource="com/embelSoft/hibernate/ProductRecordHibernate.hbm.xml" />
+		<mapping resource="com/embelSoft/hibernate/SubCategoryDetails.hbm.xml" />
+    </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.EnquiryFormHibernate" 
+    table="enquiry_form_details" >
+    
+    	<id name="pkEnquiryFormId" type="java.lang.Long" column="pk_enquiry_form_id">
+			<generator class="increment" />
+		</id>
+
+
+	<property
+        name="prsnName"
+        type="java.lang.String"
+        column="prsn_name"
+    />
+    
+    <property
+        name="enquiryDate"
+        type="java.sql.Date"
+        column="date_of_enquiry"
+    />
+    
+    <property 
+	     name="updatedDate" 
+	     type="java.sql.Date" 
+	     column="updated_date" 
+	  />
+    
+    
+    <property
+        name="contactNo"
+        type="java.lang.Long"
+        column="contact_number"
+    />	
+    
+      <property 
+	     name="alternativeContactNo" 
+	     type="java.lang.Long" 
+	     column="alternate_contact_no" 
+	  />
+	  
+	  <property 
+	     name="businessName" 
+	     type="java.lang.String" 
+	     column="business_name" 
+	  />
+    
+     <property
+        name="businessAddress"
+        type="java.lang.String"
+        column="business_address"
+    />
+    
+    <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+    />
+
+	 <property 
+	     name="enqrdFor" 
+	     type="java.lang.String" 
+	     column="enqrd_for" 
+	  />
+
+	  	  <property 
+	     name="description" 
+	     type="java.lang.String" 
+	     column="description" 
+	  />
+	  
+    
+		</class>
+    </hibernate-mapping>

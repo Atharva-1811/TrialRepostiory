@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.ClientResponseHibernate" 
+    table="client_response_details" >
+    
+    	<id name="pkClientResponseId" type="java.lang.Long" column="pk_client_response_id">
+			<generator class="increment" />
+		</id>
+
+    <property
+        name="fkClientId"
+        type="java.lang.Long"
+        column="fk_client_id"
+    />	
+
+	<property
+        name="clientName"
+        type="java.lang.String"
+        column="client_name"
+    />
+
+    
+    <property
+        name="taskInText"
+        type="java.lang.String"
+        column="task_in_text"
+    />
+    
+    
+   <property
+        name="clientFollowUpDate"
+        type="java.sql.Date"
+        column="client_followup_date"
+    />
+     <property
+        name="businessName"
+        type="java.lang.String"
+        column="business_name"
+    />
+    
+     <property
+        name="contactPersonName"
+        type="java.lang.String"
+        column="contact_person_name"
+    />
+    
+     <property
+        name="productName"
+        type="java.lang.String"
+        column="product_name"
+    />
+    
+     <property
+        name="clientResponse"
+        type="java.lang.String"
+        column="client_response"
+    />
+    
+    
+    
+    
+    
+    
+    
+    
+		</class>
+    </hibernate-mapping>

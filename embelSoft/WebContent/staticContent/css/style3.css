@@ -1,0 +1,43 @@
+div#clientResponseFollowUp_filter label {
+	color: white;
+	
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    border-radius: 12px;
+    color: black;
+}
+
+div#clientResponseFollowUp_info label{
+	color: white;
+	
+}
+
+
+
+div#clientBetweenTwoDates_length label{
+	color: white;
+}
+
+div#vendorBetweenTwoDate_filter label{
+	color: white;
+}
+
+
+div#clientBetweenTwoDatesAndName_filter label{
+	color: white;
+}
+
+div#clientBetweenTwoDate_filter label{
+	color: white;
+}
+
+div#expenseBetweenTwoDates_filter label{
+	color: white;
+}
+
+div#expenseBetweenDates_filter label{
+	color: white;
+	
+}

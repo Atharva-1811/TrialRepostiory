@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.QuotationHibernate" 
+    table="quotation_details" schema="embel_soft"
+    >
+    
+    	<id name="getPkQuotationId" type="java.lang.Long" column="pk_quotation_id">
+			<generator class="increment" />
+		</id>
+
+
+    <property
+        name="fkVendorId"
+        type="java.lang.Long"
+        column="fk_vendor_id"
+    />
+
+	<property
+        name="vendorName"
+        type="java.lang.String"
+        column="vendor_name"
+    />
+    
+    <property
+        name="quotDate"
+        type="java.sql.Date"
+        column="date_of_quotation"
+    />
+    
+    <property
+        name="task"
+        type="java.lang.String"
+        column="task"
+    />
+    
+    <property
+        name="taskPic"
+        column="file"
+    />
+    
+    </class>
+</hibernate-mapping>
+    

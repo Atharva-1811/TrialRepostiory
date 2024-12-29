@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.PurchaseOrderHibernate" 
+    table="purchase_order_details" >
+    
+    	<id name="pkPurchaseOrderId" type="java.lang.Long" column="pk_purchase_order_id">
+			<generator class="increment" />
+		</id>
+
+
+   <property
+        name="customerName"
+        type="java.lang.String"
+        column="customer_name"
+    />
+    
+     <property
+        name="purchaseDate"
+        type="java.sql.Date"
+        column="date_of_purchase"
+    />
+    
+    <property
+        name="regard"
+        type="java.lang.String"
+        column="regarding"
+    />
+    
+     <property
+        name="cost"
+        type="java.lang.Double"
+        column="cost"
+    />
+    
+    <property
+        name="reference"
+        type="java.lang.String"
+        column="reference_by"
+    />
+    
+	<property
+        name="detail"
+        type="java.lang.String"
+        column="detail"
+    />
+    
+    <property
+        name="requirement"
+        type="java.lang.String"
+        column="requirement"
+    />
+    
+   	</class>
+    </hibernate-mapping>
+    

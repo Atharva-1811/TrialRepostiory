@@ -1,0 +1,36 @@
+div#empLeaveDetails_wrapper {
+    background-color: #36487d;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.dt-buttons {
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+div#empLeaveDetails_filter {
+    padding-top: 10px;
+    padding-right: 7px;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    color: black !important;
+}
+
+div#empLeaveDetails_filter label{
+	color: white;
+}
+
+thead {
+    background-color:  #e87136;
+    color: white;
+}
+
+div#empLeaveDetails_info {
+    padding-left: 7px;
+    padding-bottom: 7px;
+    color: white;
+}

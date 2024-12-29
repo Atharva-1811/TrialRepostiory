@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.HRBillingHibernate" 
+    table="hr_billing_details">
+    
+    	<id name="getPkHRBillingId" type="java.lang.Long" column="pk_HR_Billing_id">
+			<generator class="increment" />
+		</id>
+
+
+    <property
+        name="fkVendorId"
+        type="java.lang.Long"
+        column="fk_vendor_id"
+    />
+
+	<property
+        name="vendorName"
+        type="java.lang.String"
+        column="vendor_name"
+    />
+    
+    <property
+        name="billingDate"
+        type="java.sql.Date"
+        column="date_of_billing"
+    />
+    
+     <property
+        name="billingPeriodFrom"
+        type="java.sql.Date"
+        column="date_of_billing_from"
+    />
+
+       <property
+        name="billingPeriodTo"
+        type="java.sql.Date"
+        column="date_of_billing_to"
+    />
+    
+   <!--  <property
+        name="srNO"
+        type="java.lang.Long"
+        column="sr_number"
+    />	 -->
+    
+    <property
+        name="description"
+        type="java.lang.String"
+        column="description"
+    />
+    
+    <property
+        name="hsn"
+        type="java.lang.String"
+        column="hsn"
+    />
+    
+    <property
+        name="quantity"
+        type="java.lang.Long"
+        column="quantity"
+    />
+    
+    <property
+        name="unit"
+        type="java.lang.Double"
+        column="unit_price"
+    />
+    
+    <property
+        name="gridAmount"
+        type="java.lang.Double"
+        column="grid_amount"
+    />
+    
+    <property
+        name="gridDiscountPercent"
+        type="java.lang.Double"
+        column="grid_discount_percent"
+    />
+    
+    <property
+        name="gridDiscountAmount"
+        type="java.lang.Double"
+        column="grid_discount_amount"
+    />
+    
+    <property
+        name="gridSubTotal"
+        type="java.lang.Double"
+        column="grid_sub_total"
+    />
+    
+    <property
+        name="gridGstPercent"
+        type="java.lang.Double"
+        column="grid_gst_percent"
+    />
+    
+    <property
+        name="gridGstPercentAmount"
+        type="java.lang.Double"
+        column="grid_gst_percent_amount"
+    />
+    
+    <property
+        name="amount"
+        type="java.lang.Double"
+        column="amount"
+    />
+    
+     <property
+        name="subTotal"
+        type="java.lang.Double"
+        column="sub_total"
+    />
+    
+    <property
+        name="gst"
+        type="java.lang.Double"
+        column="gst"
+    />
+    
+     <property
+        name="vat"
+        type="java.lang.Double"
+        column="vat"
+    />
+    
+    <property
+        name="grossTotal1"
+        type="java.lang.Double"
+        column="gross_total"
+    />
+    
+    
+        <property
+        name="billNo"
+        type="java.lang.String"
+        column="bill_no"
+    />
+    
+    
+    </class>
+</hibernate-mapping>
+   

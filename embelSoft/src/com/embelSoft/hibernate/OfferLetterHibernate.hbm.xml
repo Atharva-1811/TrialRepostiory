@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.OfferLetterHibernate" 
+    table="offer_letter_details" >
+    
+    	<id name="pkOfferLetterId" type="java.lang.Long" column="pk_offer_letter_id">
+			<generator class="increment" />
+		</id>
+		
+		<!-- <property
+        name="fk_employee_id"
+        type="java.lang.Long"
+        column="fk_employee_id"
+        />	 -->
+        
+        <property
+        name="employeeName"
+        type="java.lang.String"
+        column="employee_name"
+    />
+    
+    <property
+        name="idNumber"
+        type="java.lang.String"
+        column="id_number"
+    />
+    
+     <property
+        name="designation"
+        type="java.lang.String"
+        column="designation"
+    />
+    
+     <property
+        name="salary"
+        type="java.lang.Double"
+        column="salary"
+    />
+    
+    <property
+        name="dateOfJoining"
+        type="java.sql.Date"
+        column="date_of_joining"
+    />
+    
+     <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+    />
+    
+     <property
+        name="place"
+        type="java.lang.String"
+        column="place"
+    />
+
+     <property
+        name="description1"
+        type="java.lang.String"
+        column="description1"
+    />
+         <property
+        name="description2"
+        type="java.lang.String"
+        column="description2"
+    />
+ 
+    </class>
+    </hibernate-mapping>

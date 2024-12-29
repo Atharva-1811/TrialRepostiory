@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.embelSoft.hibernate.ComponentDetailsHibernate" table="component_details">
+		<id name="pkCompDtlId" type="java.lang.Long" column="pk_comp_dtl_id">
+			<generator class="increment" />
+		</id>
+		<property
+			name="componentName"
+			type="java.lang.String"
+			column="component_name"
+        />
+        <property
+        	name="addingDate"
+        	type="java.sql.Date"
+        	column="adding_Date"
+        />
+        <property
+			name="description"
+			type="java.lang.String"
+			column="description"
+        />
+        <property
+			name="features"
+			type="java.lang.String"
+			column="features"
+        />
+ 	</class>
+</hibernate-mapping>

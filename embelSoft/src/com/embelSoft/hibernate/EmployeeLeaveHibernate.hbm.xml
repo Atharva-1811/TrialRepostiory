@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Dec, 2018 5:02:36 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.EmployeeLeaveHibernate" table="employee_leave_details" >
+       
+        <id name="empLeavePkId" type="java.lang.Long">
+            <column name="empLeavePkId" />
+            <generator class="increment" />
+        </id>
+        
+        
+        <property name="empFkId" type="java.lang.Long">
+            <column name="empFkId" />
+        </property>
+        
+        <property name="empName" type="java.lang.String">
+            <column name="employee_name" />
+        </property>
+        <property name="leaveDateFrom" type="java.util.Date">
+            <column name="leave_date_from" />
+        </property>
+        <property name="leaveDateTo" type="java.util.Date">
+            <column name="leave_date_to" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="approvedBy" type="java.lang.String">
+            <column name="approved_by" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

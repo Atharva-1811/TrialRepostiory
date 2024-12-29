@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BillOfMaterialHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+    <hibernate-mapping>
+    <class name="com.embelSoft.hibernate.BillOfMaterialHibernate" table="bill_of_material" >
+		
+		<id name="pkCompBomId" type="java.lang.Long" column="pk_comp_BOM_id">
+			<generator class="increment" />
+		</id>	
+	
+	<property
+			name="projectName"
+			type="java.lang.String"
+			column="projectName"
+        />
+	
+	<property
+			name="componentName"
+			type="java.lang.String"
+			column="componentName"
+        />
+	<property
+			name="boardName"
+			type="java.lang.String"
+			column="boardName"
+        />
+        
+		<property
+			name="componentType"
+			type="java.lang.String"
+			column="componentType"
+        />
+	
+	
+	
+		<property
+			name="fkCompTypeId"
+			type="java.lang.Long"
+			column="fk_comp_type_id"
+        />
+        
+        <property
+			name="ref_Designator"
+			type="java.lang.String"
+			column="ref_desinator"
+        />
+        
+      
+        <property
+			name="value"
+			type="java.lang.String"
+			column="value"
+        />
+        
+        <property
+			name="part_Number"
+			type="java.lang.String"
+			column="part_number"
+        />
+        
+        <property
+			name="packages"
+			type="java.lang.String"
+			column="package"
+        />
+        
+        <property
+			name="tolvRating"
+			type="java.lang.String"
+			column="voltage"
+        />
+        
+		<property
+			name="manufactureName"
+			type="java.lang.String"
+			column="manufracture_name"
+        />
+        
+		<property
+			name="description"
+			type="java.lang.String"
+			column="descrption"
+        />
+        
+        <property
+			name="oneBoardQty"
+			type="java.lang.Double"
+			column="quantity_for_board"
+        />
+        
+        <property
+			name="unitPrice"
+			type="java.lang.Double"
+			column="unit_price"
+        />
+        
+        <property
+			name="boardCost"
+			type="java.lang.Double"
+			column="board_cost"
+        />	
+        
+        <property
+			name="remark"
+			type="java.lang.String"
+			column="remark"
+        />
+        
+        
+        <property
+			name="vendorName"
+			type="java.lang.String"
+			column="vendorName"
+        />
+        
+         <property
+        name="lastUpdateDate"
+        type="java.sql.Date"
+        column="last_update_date"
+    />
+        	
+	</class>		
+	</hibernate-mapping>		

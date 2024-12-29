@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.ClientEnquiryHibernate" 
+    table="client_enquiry_details" >
+    
+    	<id name="pkClientEnquiryId" type="java.lang.Long" column="pk_client_enquiry_id">
+			<generator class="increment" />
+		</id>
+
+
+	<property
+        name="firstName"
+        type="java.lang.String"
+        column="first_name"
+    />
+    
+    
+    <property
+        name="GstNo"
+        type="java.lang.String"
+        column="Gst_No"
+    />
+   <!--  <property
+        name="middleName"
+        type="java.lang.String"
+        column="middle_name"
+    />
+    
+    <property
+        name="lastName"
+        type="java.lang.String"
+        column="last_name"
+    /> -->
+    
+    <property
+        name="enquiryDate"
+        type="java.sql.Date"
+        column="date_of_enquiry"
+    />
+    
+    <property
+        name="contactNo"
+        type="java.lang.Long"
+        column="contact_number"
+    />	
+    
+     <property
+        name="address"
+        type="java.lang.String"
+        column="address"
+    />
+    
+    <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+    />
+    
+  <!--  <property
+        name="comment"
+        type="java.lang.String"
+        column="comment"
+    />
+    
+    <property
+        name="referenceBy"
+        type="java.lang.String"
+        column="reference_by"
+    /> -->
+
+	  
+	  <property 
+	     name="insertDate" 
+	     type="java.sql.Date" 
+	     column="insert_date" 
+	  />
+    
+
+	  <property 
+	     name="businessName" 
+	     type="java.lang.String" 
+	     column="business_name" 
+	  />
+	  
+	  	  <property 
+	     name="businessAddress" 
+	     type="java.lang.String" 
+	     column="business_address" 
+	  />
+	  
+	  	  <property 
+	     name="alternativeContactNo" 
+	     type="java.lang.String" 
+	     column="alternate_contact_no" 
+	  />
+	  
+	  	<!--   <property 
+	     name="productName" 
+	     type="java.lang.String" 
+	     column="product_name" 
+	  /> -->
+	  
+
+		  <property 
+	     name="city" 	
+	     type="java.lang.String" 
+	     column="city" 
+	  />
+	  
+	  	  <property 
+	     name="state" 
+	     type="java.lang.String" 
+	     column="state" 
+	  />
+	  
+	  	  <property 
+	     name="Country" 
+	     type="java.lang.String" 
+	     column="Country" 
+	  />
+	  
+	      <property
+        name="zipCode"
+        type="java.lang.String"
+        column="zipCode"
+    />	
+    
+	  
+    <!--     		
+    <property
+        name="taskPic"
+        column="file"
+    /> -->
+    
+    
+		</class>
+    </hibernate-mapping>

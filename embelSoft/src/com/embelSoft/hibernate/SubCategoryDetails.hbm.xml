@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CompTypeDetailsHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.embelSoft.hibernate.SubcategoryHibernate" table="subcategory_details">
+		<id name="pksubCategoryId" type="java.lang.Long" column="pk_subcategoryId">
+			<generator class="increment" />
+		</id>
+        
+        <property
+			name="ComponentSubCategory"
+			type="java.lang.String"
+			column="sub_categoryname"
+        />
+        <property
+        	name="fkCategoryId"
+        	type="java.lang.Long"
+        	column="fk_categoryid"
+        />
+        
+        <property
+			name="status"
+			type="java.lang.String"
+			column="status"
+        />
+        <property
+        	name="lastUpdateDate"
+        	type="java.sql.Date"
+        	column="lastupdatedDate"
+        />
+ 	</class>
+</hibernate-mapping>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 Sep, 2018 4:07:56 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.PurchaseOrderCreateHibernate" table="purchase_order_create" >
+    
+        <id name="pkVendorId" type="java.lang.Long">
+            <column name="pk_vendor_id" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="vendorName" type="java.lang.String">
+            <column name="vendor_name" />
+        </property>
+        <property name="vendorCompanyName" type="java.lang.String">
+            <column name="vendor_company_name" />
+        </property>
+        <property name="contactNo" type="java.lang.String">
+            <column name="contact_no" />
+        </property>
+        <property name="streetAddress" type="java.lang.String">
+            <column name="street_address" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="city" />
+        </property>
+        <property name="zipCode" type="java.lang.String">
+            <column name="zip_code" />
+        </property>
+        <property name="phone" type="java.lang.String">
+            <column name="phone" />
+        </property>
+        <property name="fax" type="java.lang.String">
+            <column name="fax" />
+        </property>
+        <property name="productDescription" type="java.lang.String">
+            <column name="product_description" />
+        </property>
+        <property name="quantity" type="java.lang.Long">
+            <column name="quantity" />
+        </property>
+        <property name="unitPrice" type="java.lang.Double">
+            <column name="unit_price" />
+        </property>
+        <property name="total" type="java.lang.Double">
+            <column name="total" />
+        </property>
+        <property name="subTotal" type="java.lang.Double">
+            <column name="sub_total" />
+        </property>
+        <property name="gst" type="java.lang.Long">
+            <column name="gst" />
+        </property>
+        <property name="vat" type="java.lang.Double">
+            <column name="vat" />
+        </property>
+        <property name="grossTotal" type="java.lang.Double">
+            <column name="gross_total" />
+        </property>
+        
+        
+        
+        <property name="companyAddress" type="java.lang.String">
+            <column name="company_address" />
+        </property>
+        <property name="gstinNumber" type="java.lang.String">
+            <column name="gstin_number" />
+        </property>
+         <property name="panNumber" type="java.lang.String">
+            <column name="pan_number" />
+        </property>
+        <property name="cinNumber" type="java.lang.String">
+            <column name="cin_address" />
+        </property>
+             
+         <property name="billNo" type="java.lang.String">
+            <column name="billNo" />
+  	 	</property>
+        
+        
+    </class>
+</hibernate-mapping>

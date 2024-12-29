@@ -1,0 +1,418 @@
+
+
+#list_filter {
+    background-color: #36487d;
+    text-align: right;
+    color: white;
+    border-radius: 10px 10px  0px 0px;
+}
+/* top search */
+#list_info {
+    background-color: #36487d;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 7px;
+        width: 100% !important;
+}
+/* bottom table footer */
+th.sorting {
+    background-color: #e87136;
+    color: white;
+}
+th.sorting_asc {
+    background-color: #e87136;
+    color: white;
+}
+tr.even {
+    background-color: white;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    border-radius: 12px;
+    color: black;
+}
+
+label#demo {
+    color: black;
+}
+
+label {
+   /*  color: white;  */
+    padding-bottom: 4px;
+    padding-top: 8px;
+    margin-right: 5px;
+}
+
+
+/* element.style {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 1099px;
+} */
+/* .table-bordered {
+    border: 1px solid #ddd;
+} */
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1px;
+}
+
+/* //////////////////----------- Enquiry form--------------//////// */
+
+div#enquiryList_filter {
+    background-color: #36487d;
+    text-align: right;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+
+div#enquiryList_info {
+    background-color: #36487d;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 7px;
+}
+
+/* -------------ExpenseList---------- css */
+
+div#list2_filter {
+    color: white;
+    background-color: #36487d;
+     border-radius: 10px 10px !important;
+    width: 100%;
+}
+div#list2_wrapper {
+    background-color: #36487d;
+    border-radius: 10px 10px 10px 10px !important;
+    color: white;
+}
+
+div#list2_info {
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 7px;
+     padding-top: 7px;
+    padding-left: 7px;
+}
+
+
+/* -------------ClientsEnquiryList---------- css */
+div#clientList_filter{
+	background-color: #36487d;
+    text-align: right;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+div#clientList_info{
+	background-color: #36487d;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 7px;
+}
+/* -------------TaxDetailesList---------- css */
+
+/* -------------empLeaveDetailsList---------- css */
+div#empDetails_filter{
+	background-color: #36487d;
+    text-align: right;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: 100%;
+}
+div#empDetails_info{
+	background-color: #36487d;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 7px;
+    width: 100%;
+}
+
+
+/* -------------empLeaveDetailsList---------- css */
+div#empLeaveDetails_filter
+{
+background-color: #36487d;
+    text-align: right;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    width: 100%;	
+}
+div#empLeaveDetails_info{
+	background-color: #36487d;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 7px;
+    width: 100%;
+} 
+
+/* -------------clientResponseList---------- css */  
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    *zoom: 1;
+    zoom: 1;
+    width: 100%;
+    background-color: #36487d;
+    color: white;
+    border-radius: 10px;
+}
+
+div#clientResponseList_info {
+    color: white;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+div#clientResponseList_info {
+    color: white;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+
+///////////// ProductBill/////////////
+
+thead {
+    background-color: #e87136;
+    color: white;
+}
+th {
+    color: white;
+    background-color: #e87136;
+}
+
+//////////////////ResourseBilling/////////////////
+thead {
+    background-color: red;
+}
+
+/* thead {
+    background-color: red;
+    color: white;
+} */
+//////////////////QutationReport/////////////////
+
+
+div#typeWiseReportForQuo_info {
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 7px;
+}
+div#typeWiseReportForQuo_info {
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 7px;
+}
+div#typeWiseReportForQuo_filter {
+    padding-top: 5px;
+}
+
+div.dt-buttons {
+    position: relative;
+    float: left;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+/* //////////////////----------- Enquiry list--------------//////// */
+
+div#purchaseOrderCreatelist_filter {
+    color: white;
+    padding-top: 3px;
+    background-color: #36487d;
+    border-radius: 10px 10px;
+}
+
+div#purchaseOrderCreatelist_info {
+    color: white;
+    padding-left: 7px;
+    padding-bottom: 5px;
+     background-color: #36487d;
+     border-radius: 0px 0px 10px 10px;
+}
+
+/* //////////////////----------- EmploteePayment --------------//////// */
+
+div#employeePaymentList_filter {
+    padding-top: 5px;
+}
+
+div#employeePaymentList_info {
+    color: white;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+/* //////////////////----------- vendorPaymentList --------------//////// */
+
+div#vendorPaymentList_filter {
+    color: white;
+     padding-top: 5px;
+}
+div#vendorPaymentList_info {
+    color: white;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+
+div#clientPaymentList_filter {
+    color: white;
+     padding-top: 5px;
+}
+
+div#clientPaymentList_info {
+    color: white;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+///////////////////// OfferLatterList ////////////////////////////////
+
+ div#list2_length {
+    padding-top: 5px;
+}
+
+div#list2_length {
+    display: none;
+}
+
+div#list2_filter {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-align: right;
+} 
+
+ .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+    cursor: default;
+    color: #fff!important;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
+} 
+
+///////////////////// ComponentTypeList ////////////////////////////////
+/* div#list2_wrapper {
+    background-color: blue;
+    color: white;
+}
+thead {
+    background-color: red;
+    color: white;
+} */
+
+//////////////////////ComponentCategoryList///////////////////////
+ div#Compoentcategorylist_filter {
+    padding-top: 7px;
+} 
+
+div#Compoentcategorylist_wrapper {
+    padding-top: 7px;
+}
+
+div#Compoentcategorylist_info {
+     color: white; 
+    padding-left: 7px;
+}
+
+a#Compoentcategorylist_previous {
+	color: white;  
+}
+
+div#categoryBetweenTwoDatesAndName1_filter label{
+	color: white;  
+}
+
+
+a#Compoentcategorylist_next {
+     background-color: white; 
+    color: white;
+}
+////////////////////////////////////////////////////////////
+a#purchaseOrderCreatelist_next {
+   background-color: white; 
+}
+
+////////////////////////////////////////////////////////////
+/* .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: inherit;
+    vertical-align: top;
+}
+ */
+ 
+ .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+        line-height: 0.5;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+div#clientBetweenTwoDatesAndName_filter {
+    color: white;
+}
+
+div#clientBetweenTwoDatesAndName_filter label{
+	color: white;
+}
+
+div#clientBetweenTwoDate_filter label{
+	color: white;
+}
+
+div#categoryBetweenTwoDatesAndName_filter label{
+	color: white;
+}
+div#CompoennetNameBetweenTwoDatesAndName_filter label{
+	color: white;
+}
+
+div#clientBetweenTwoDatesAndName_info {
+    color: white;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
+
+div#clientBetweenTwoDate_info{
+	 color: white;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
+div#categoryBetweenTwoDatesAndName_info{
+	color: white;
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
+div#CompoennetNameBetweenTwoDatesAndName_info{
+	color: white;
+    padding-left: 7px;
+    padding-bottom: 7px;
+	
+}
+div#categoryBetweenTwoDatesAndName1_info{
+	color: white;
+    padding-left: 7px;
+    padding-bottom: 7px;
+	
+}
+//////////////////////////////////////////////////////////////////////////
+
+

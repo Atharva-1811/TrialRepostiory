@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ComponentStockHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.embelSoft.hibernate.ComponentStockHibernate" table="component_stock_dtl" >
+	
+		<id name="pkCompStockId" type="java.lang.Long" column="pk_comp_stock_id">
+			<generator class="increment" />
+		</id>
+        <property
+			name="componentType"
+			type="java.lang.String"
+			column="component_type"
+        />
+        <property
+			name="fkCompTypeId"
+			type="java.lang.Long"
+			column="fk_comp_type_id"
+        />
+		<property
+			name="componentName"
+			type="java.lang.String"
+			column="component_name"
+        />
+        
+        <property
+			name="fkCompoentnameid"
+			type="java.lang.Long"
+			column="fk_compoent_name_id"
+        />
+        
+        <property
+			name="ManufacturarName"
+			type="java.lang.String"
+			column="manufacturar_name"
+        />
+        <property
+			name="type"
+			type="java.lang.String"
+			column="type"
+        />
+        <property
+			name="compPackage"
+			type="java.lang.String"
+			column="comp_package"
+        />
+        <property
+			name="unit"
+			type="java.lang.String"
+			column="unit"
+        />
+		<property
+			name="quantity"
+			type="java.lang.Long"
+			column="quantity"
+        />
+        <property
+			name="compStockLastUpdateDate"
+			type="java.sql.Date"
+			column="comp_stock_last_update_date"
+        />
+ 	</class>
+</hibernate-mapping>

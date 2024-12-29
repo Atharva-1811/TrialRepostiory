@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CompTypeDetailsHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.embelSoft.hibernate.CompTypeDetailsHibernate" table="component_type_details" >
+		<id name="pkCompTypeId" type="java.lang.Long" column="pk_comp_type_id">
+			<generator class="increment" />
+		</id>
+		<property
+			name="componentType"
+			type="java.lang.String"
+			column="component_type"
+        />
+        <property
+        	name="lastUpdateDate"
+        	type="java.sql.Date"
+        	column="last_update_date"
+        />
+ 	</class>
+</hibernate-mapping>

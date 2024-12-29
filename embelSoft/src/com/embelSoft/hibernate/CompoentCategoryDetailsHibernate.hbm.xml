@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BillOfMaterialHibernate.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+    
+    <hibernate-mapping>
+    <class name="com.embelSoft.hibernate.CompoentCategoryDetailsHibernate" table="compoent_category_details" >
+		
+		<id name="pkComponentCategoryDetailsId" type="java.lang.Long" column="pk_compoent_category_id">
+			<generator class="increment" />
+		</id>	
+	
+	<property
+			name="componentCategory"
+			type="java.lang.String"
+			column="compoent_category"
+        />
+	
+	<property
+			name="componentName"
+			type="java.lang.String"
+			column="compoent_name"
+        />
+        
+        <property
+			name="componentValue"
+			type="java.lang.String"
+			column="compoent_value"
+        />
+        <property
+			name="partNumber"
+			type="java.lang.String"
+			column="part_number"
+        />
+        
+         <property
+			name="manufractureName"
+			type="java.lang.String"
+			column="manufracture_name"
+        />
+        
+        <property
+			name="description"
+			type="java.lang.String"
+			column="descrption"
+        />
+        
+        <property
+			name="componentType"
+			type="java.lang.String"
+			column="type"
+        />
+        
+        <property
+			name="tovRating"
+			type="java.lang.String"
+			column="tov_rating"
+        />
+        
+        <property
+			name="unit"
+			type="java.lang.Double"
+			column="unit"
+        />
+        
+         <property
+			name="taxName"
+			type="java.lang.String"
+			column="tax_name"
+        />
+        
+         <property
+			name="unitPrice"
+			type="java.lang.Double"
+			column="unit_price"
+        />
+        
+         <property
+			name="unitPriceWithCustomduty"
+			type="java.lang.Double"
+			column="unit_price_customduty"
+        />
+        
+        
+        
+        
+        
+         <property
+			name="taxPercentage"
+			type="java.lang.Double"
+			column="tax_percentage"
+        />
+        
+         <property
+			name="CGST"
+			type="java.lang.Double"
+			column="cgst"
+        />
+        
+         <property
+			name="SGST"
+			type="java.lang.Double"
+			column="sgst"
+        />
+        
+        <property
+			name="duty"
+			type="java.lang.Double"
+			column="duty"
+        />
+        
+        <property
+			name="fkTaxTypeId"
+			type="java.lang.Long"
+			column="fk_tax_type_id"
+        />
+        
+         <property
+			name="fkCompTypeId"
+			type="java.lang.Long"
+			column="fk_comp_type_id"
+        />
+        
+        <property
+			name="packages"
+			type="java.lang.String"
+			column="packages"
+        />
+        
+        
+        <property
+			name="componentSubCategory"
+			type="java.lang.String"
+			column="componentSubCategory"
+        />
+        
+        <property
+			name="fksubCategory"
+			type="java.lang.Long"
+			column="fksubCategory"
+        />
+        
+        </class>
+        </hibernate-mapping>

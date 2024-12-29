@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Aug, 2018 12:37:33 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.UserDetailasNewHibernate" table="user_details" >
+        
+		<id name="pkUserId" type="java.lang.Long">
+			<column name="pk_user_id" />
+			<generator class="increment" />
+		</id>
+
+        <property name="firstName" type="java.lang.String">
+            <column name="first_name" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="last_name" />
+        </property>
+        <property name="contactNo" type="java.lang.Long">
+            <column name="contact_no" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+        <property name="city" type="java.lang.String">
+            <column name="city" />
+        </property>
+        <property name="pincode" type="java.lang.Long">
+            <column name="pincode" />
+        </property>
+        <property name="emailId" type="java.lang.String">
+            <column name="email_id" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="user_name" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+        <property name="rePassword" type="java.lang.String">
+            <column name="re_password" />
+        </property>
+        <property name="panNumber" type="java.lang.String">
+            <column name="pan_number" />
+        </property>
+        <!-- <property name="userType" type="java.lang.String">
+            <column name="user_type" />
+        </property> -->
+    </class>
+</hibernate-mapping>

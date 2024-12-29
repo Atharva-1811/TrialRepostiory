@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+ <!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+
+	<class name="com.embelSoft.hibernate.ExpenditureDetailsHibernate" table="expenditure_details" >
+		<id name="pkExpenseId" type="java.lang.Long">
+			<column name="pk_expense_id" />
+			<generator class="increment" />
+		</id>
+		<property name="expenseName" type="java.lang.String">
+			 <column name="expense_name" />
+		</property>
+		<property name="lastUpdateDate" type="java.sql.Date">
+			<column name="last_update_date" />
+		</property>
+	</class>
+	
+
+	
+<!-- 	<class name="com.embelSoft.hibernate.UserDetailasHibernate" table="user_login">  -->
+<!--         <id name="pkUserId" type="java.lang.Long"> -->
+<!--             <column name="id" /> -->
+<!--             <generator class="increment" /> -->
+<!--         </id> -->
+<!--         <property name="Name" type="java.lang.String"> -->
+<!--             <column name="Name" /> -->
+<!--         </property> -->
+<!--         <property name="userName" type="java.lang.String"> -->
+<!--             <column name="UserName" /> -->
+<!--         </property> -->
+<!--         <property name="password" type="java.lang.String"> -->
+<!--             <column name="Password" /> -->
+<!--         </property> -->
+<!--         <property name="confirmPassword" type="java.lang.String"> -->
+<!--             <column name="Confirm_Password" /> -->
+<!--         </property>     -->
+<!--     </class> -->
+</hibernate-mapping>

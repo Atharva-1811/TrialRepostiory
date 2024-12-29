@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ProductBillingHibernateNew.hbm.xml -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.CompoenentBillingHibernate" table="compoenent_billing" >
+    	<id name="pkCompoenentBillId" type="java.lang.Long" column="pk_compoent_bill_id">
+			<generator class="increment" />
+		</id>
+		<property
+			name="billNo"
+        	type="java.lang.String"
+        	column="bill_no"
+       />
+		<property
+			name="billingDate"
+        	type="java.sql.Date"
+        	column="bill_date"
+       />
+       <property
+			name="fkClientId"
+        	type="java.lang.Long"
+        	column="fk_client_id"
+       />
+       <property
+			name="clientName"
+        	type="java.lang.String"
+        	column="cilent_name"
+       />
+       
+       <property
+			name="ProjectName"
+        	type="java.lang.String"
+        	column="project_name"
+       />
+       <property
+			name="BoardName"
+        	type="java.lang.String"
+        	column="board_name"
+       />
+       <property
+			name="fkComptypeId"
+        	type="java.lang.Long"
+        	column="fk_comp_type_id"
+       />
+       <property
+			name="CompoenentName"
+        	type="java.lang.String"
+        	column="compoenent_name"
+       />
+        <property
+			name="fkCompoentnameid"
+			type="java.lang.Long"
+			column="fk_compoent_name_id"
+        />
+       <property
+			name="compoenentCategory"
+        	type="java.lang.String"
+        	column="compoenent_category"
+       />
+       <property
+			name="hsn"
+        	type="java.lang.String"
+        	column="hsn_sac"
+       />
+       <property
+			name="unitPrice"
+        	type="java.lang.Double"
+        	column="unit_price"
+       />
+       <property
+			name="quantity"
+        	type="java.lang.Long"
+        	column="quantity"
+       />
+       <property
+			name="amount"
+        	type="java.lang.Double"
+        	column="amount"
+       />
+       <property
+			name="discountPercentage"
+        	type="java.lang.Double"
+        	column="discount_percentage"
+       />
+       <property
+			name="discountAmount"
+        	type="java.lang.Double"
+        	column="discount_amount"
+       />
+       <property
+			name="subtotal"
+        	type="java.lang.Double"
+        	column="sub_total"
+       />
+       <property
+			name="gst"
+        	type="java.lang.Double"
+        	column="gst"
+       />
+       <property
+			name="igst"
+        	type="java.lang.Double"
+        	column="igst"
+       />
+       <property
+			name="taxAmount"
+        	type="java.lang.Double"
+        	column="tax_amount"
+       />
+       <property
+			name="total"
+        	type="java.lang.Double"
+        	column="gross_total"
+       />
+       
+     <property
+			name="packages"
+        	type="java.lang.String"
+        	column="package"
+       />
+       
+       <property
+			name="partNumber"
+        	type="java.lang.String"
+        	column="part_Number"
+       />
+       
+       <property
+			name="values1"
+        	type="java.lang.String"
+        	column="Comp_value"
+       />
+       <property
+			name="mfgName"
+        	type="java.lang.String"
+        	column="manufracture_Name"
+       /> 
+       <property
+			name="description"
+        	type="java.lang.String"
+        	column="description"
+       /> 
+    </class>
+</hibernate-mapping>
+   

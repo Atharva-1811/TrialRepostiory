@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 Sep, 2018 5:18:34 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.ClientPaymentDetailsHibernate" table="client_payment_details" >
+       
+        <id name="pkClientPaymentId" type="java.lang.Long">
+            <column name="pk_client_payment_detailas_id" />
+            <generator class="increment" />
+        </id>
+       
+        <property name="fkClientId" type="java.lang.Long">
+            <column name="fk_client_payment_id" />
+        </property>
+        <property name="clientName" type="java.lang.String">
+            <column name="client_name" />
+        </property>
+        <property name="totalAmount" type="java.lang.Double">
+            <column name="total_amount" />
+        </property>
+       <!--  <property name="billNo" type="java.lang.Long">
+            <column name="bill_no" />
+        </property>
+        <property name="billAmount" type="java.lang.Double">
+            <column name="bill_amount" />
+        </property> -->
+        <property name="balanceAmount" type="java.lang.Double">
+            <column name="balance_amount" />
+        </property>
+       <property name="paidAmount" type="java.lang.Double">
+            <column name="paid_amount" />
+        </property>
+        
+        <property name="insertDate" type="java.sql.Date" 
+          column="insert_date" >
+        </property>
+        
+    </class>
+</hibernate-mapping>

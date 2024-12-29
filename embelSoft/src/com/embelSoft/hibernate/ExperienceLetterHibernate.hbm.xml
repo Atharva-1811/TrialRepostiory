@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 28 Sep, 2018 3:42:30 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.embelSoft.hibernate.ExperienceLetterHibernate" table="experience_letter_details" >
+    
+        <id name="pkExpLetterId" type="java.lang.Long">
+            <column name="pk_exp_letter_id" />
+            <generator class="increment" />
+        </id>
+        
+        
+        <property name="fkEmpId" type="java.lang.Long">
+            <column name="fk_emp_id" />
+        </property>
+        <property name="employeeName" type="java.lang.String">
+            <column name="employee_name" />
+        </property>
+        <property name="designation" type="java.lang.String">
+            <column name="designation" />
+        </property>
+        <property name="dateOfJoining" type="java.lang.String">
+            <column name="date_of_joining" />
+        </property>
+        <property name="dateOfLeaving" type="java.lang.String">
+            <column name="date_of_leaving" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

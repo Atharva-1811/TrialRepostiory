@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    
+    <class name="com.embelSoft.hibernate.VendorDetailsHibernate" 
+    table="vendor_details" >
+    
+    	<id name="pkVendorDetailsId" type="java.lang.Long" column="pk_vendor_details_id">
+			<generator class="increment" />
+		</id>
+
+
+	<property
+        name="vendorName"
+        type="java.lang.String"
+        column="vendor_name"
+    />
+    
+    <property
+        name="enquiryDate"
+        type="java.sql.Date"
+        column="date"
+    />
+    
+    <property
+        name="contactNo"
+        type="java.lang.Long"
+        column="contact_number"
+    />	
+    
+     <property
+        name="address"
+        type="java.lang.String"
+        column="address"
+    />
+    
+    <property
+        name="emailId"
+        type="java.lang.String"
+        column="email_id"
+    />
+    
+   <property
+        name="zipCode"
+        type="java.lang.String"
+        column="zip_code"
+    />
+    
+    <property
+        name="country"
+        type="java.lang.String"
+        column="country"
+    />
+    		
+   <property
+        name="state"
+        type="java.lang.String"
+        column="state"
+    />
+    
+	    <property
+        name="PANNum"
+        type="java.lang.String"
+        column="PAN_number"
+    />
+    
+	    <property
+        name="CIMNo"
+        type="java.lang.String"
+        column="CIM_number"
+    />
+    
+	  <property 
+	     name="gstInNo" 
+	     type="java.lang.String" 
+	     column="gst_in_number" 
+	  />
+	  
+	  
+	
+	
+	  
+	  
+	   <property 
+	     name="alternateContactNo" 
+	     type="java.lang.String" 
+	     column="alternate_contact_number" 
+	  />
+
+	  <property 
+	     name="companyName" 
+	     type="java.lang.String" 
+	     column="company_name" 
+	  />
+	   <property 
+	     name="emengencyContactNo" 
+	     type="java.lang.String" 
+	     column="emergency_contact_number" 
+	  />
+	  <property 
+	     name="companyAddress" 
+	     type="java.lang.String" 
+	     column="company_address" 
+	  />
+	  
+<!-- 	 <property 
+	     name="permanentAddress" 
+	     type="java.lang.String" 
+	     column="permanent_address" 
+	  />
+ -->
+	    <property
+        name="companyNumber"
+        type="java.lang.Long"
+        column="company_number"
+    />	
+    
+    	   <property 
+	     name="contactPersonName" 
+	     type="java.lang.String" 
+	     column="contact_person_name" 
+	  />
+ 
+ 
+	  </class>
+    </hibernate-mapping>

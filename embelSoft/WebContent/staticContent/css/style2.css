@@ -1,0 +1,122 @@
+#list2_wrapper {
+    background-color: #36487d;
+    color: white;
+        border-radius: 10px 10px 10px 10px;
+}
+tr {
+    background-color: #e87136;
+    color: white;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 700;
+    text-align: right;
+    padding-left: 7px;
+    color: white;
+}
+
+/* .dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+} */
+
+input[type=search] {
+    -webkit-appearance: none;
+    border-radius: 13px;
+    color: black;
+}
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+    color: #fff;
+    padding-left: 7px;
+    
+}
+
+.dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+    padding-top: 0.75em;
+    text-align: center;
+    padding-bottom: 0.755em;
+}
+
+/*  div#list2_wrapper {
+    background-color: blue;
+    color: white;
+} */
+thead {
+    background-color: red;
+    color: white;
+} 
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    *cursor: hand;
+    color: #fff !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+a#list2_previous {
+    background-color: white;
+}
+
+a#list2_next{
+	 background-color: white;
+}
+
+/*----------------------------------------------------------------*/
+.dataTables_length select {
+    color: #000;
+    outline: none;
+    padding: 4px;
+}
+.dataTables_filter {
+	padding: 5px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 10px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.dataTables_length {
+    color: #fff;
+    padding-left: 7px;
+    padding-top: 5px;
+}
+.paginate_button {
+	margin: 5px;
+} 
+.dataTables_wrapper .dataTables_paginate .ellipsis {
+    padding: 0 1em;
+    color: #fff;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    *cursor: hand;
+    color: #fff !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+
